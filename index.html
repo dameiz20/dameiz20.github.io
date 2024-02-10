@@ -5,15 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dakota Meisel Homepage</title>
    <link rel="stylesheet" href="css/styles.css">
+   <link rel="javascript" href="/site.js">
    <script src="/site.js" defer></script>
    
 </head>
-<body>
+<body >
     <header>
         <h1>Dakota Meisel</h1>
         <img src="images/meiselFamily.jpg" alt="picture of my family and me">
     </header>
-    <Main >
+    <Main>
+        
+        <section id="greeting">
+            <h2 >Welcome</h2>
+            <div id="Welcome"></div> 
+            <script>
+                // JavaScript code
+                const hours = new Date().getHours(); // get the current hour
+        
+                const isMorning = hours >= 4 && hours < 12; // is it morning?
+                const isAfternoon = hours >= 12 && hours < 17; // is it afternoon?
+                const isEvening = hours >= 17 || hours < 4; // is it evening?
+        
+                // Get the element where you want to display the message
+                const messageDiv = document.getElementById('Welcome');
+        
+                // Display message based on the time of day
+                if (isMorning) {
+                    messageDiv.innerText = "Good morning! Have a great day!";
+                } else if (isAfternoon) {
+                    messageDiv.innerText = "Good afternoon! Hope you're having a good day!";
+                } else if (isEvening) {
+                    messageDiv.innerText = "Good evening! Enjoy your evening!";
+                } else {
+                    messageDiv.innerText = "Hello! Welcome to our website!";
+                }
+            </script>
+        </section>
         <section id="bio">
             <h2>Short Bio</h2>
             <p>Hello, my name is Dakota Meisel and I am a student in the software development program here at FVTC. I am currently working as an Ultra Sonic rail tester. Me and my wife have just recently gotten married and we have also welcomed our first kid back in October. Being a dad has challenged me in ways i have never thought possible and has forced me to think outside of the box a lot as well.  </p>
