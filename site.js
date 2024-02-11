@@ -16,7 +16,7 @@ function displayMessage()
     } else if (isAfternoon) {
         messageDiv.innerText = "Good afternoon! Hope you're having a good day!";
     } else if (isEvening) {
-        messageDiv.innerText = "Good evening! Enjoy your evening!";
+        messageDiv.innerText = "Good evening! Remember to take a moment to appreciate the little things that make life beautiful!";
     } else {
         messageDiv.innerText = "Hello! Welcome to our website!";
     }
