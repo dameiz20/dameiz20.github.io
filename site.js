@@ -20,4 +20,4 @@ function displayMessage()
     } else {
         messageDiv.innerText = "Hello! Welcome to our website!";
     }
-}
+} 
