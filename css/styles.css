@@ -11,12 +11,40 @@ header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 50px;
+    padding: 25px;
 }
 
 header img {
     max-width: 100px;
     border-radius: 50%;
+}
+
+nav{
+    padding-top: 20px;
+}
+.nav-list {
+    list-style-type: none;
+    padding: 50;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.nav-list li a {
+    display: block;
+    padding: 10px;
+    background-color: none; /* Background color for each link */
+    
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    background-color: #f9f9f9; /* Background color for each link on hover */
+    color: red;
 }
 
 section {
