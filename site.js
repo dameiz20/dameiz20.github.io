@@ -21,3 +21,15 @@ function displayMessage()
         messageDiv.innerText = "Hello! Welcome to our website!";
     }
 } 
+
+function secretMessage(message) {
+    localStorage.setItem("It's a secret to everybody.", message);
+    //write message to console
+    console.log(message);
+  }
+  
+   // create what the message will be
+  const secret = "I hope I did this assignment the right way ¯\_(ツ)_/¯";
+
+  // Call the function
+  secretMessage(secret);
